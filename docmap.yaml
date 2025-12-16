@@ -1,0 +1,5 @@
+repos:
+  - name: repo-a
+    path: ./src/repo-a
+  - name: repo-b
+    path: ./src/repo-b

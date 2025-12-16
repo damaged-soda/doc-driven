@@ -1,0 +1,3 @@
+# ignore all external repos under src/
+src/*
+!src/.gitkeep
