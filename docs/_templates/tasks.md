@@ -33,18 +33,3 @@
 * [ ] **SOT Update**: 将 `spec_delta.md` 的内容合并入 `./docs/sot/`。
 * [ ] **Cleanup**: 确认所有临时代码已提交。
 * [ ] **Ready**: 通知用户可以执行归档操作。
-
-## 💡 Git 提交建议bash
-
-# Phase 1
-
-git commit -m "feat: setup types and dependencies for <topic>"
-
-# Phase 2
-
-git commit -m "feat: implement core logic for <topic>"
-
-# Phase 4 (Archive)
-
-git commit -m "chore: update SOT docs and archive <topic>"
-

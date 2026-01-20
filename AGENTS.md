@@ -7,7 +7,6 @@
 * **仓库映射**: `./docmap.yaml` (单一事实源，先读再动)
 * **Git 规则**:
 * **严禁** 直接执行任何 git 命令 (clone/commit/push)。
-* **必须** 在每个阶段结束时，生成建议的 git 命令代码块供用户审核，若同意则执行。
 
 ## 1) 目录本体论 (Directory Ontology)
 
@@ -61,8 +60,6 @@
 1. 读取 `tasks.md`，逐条执行。
 2. **原子化写入**：每次修改代码后，立即在 `tasks.md` 中打钩 `[x]`。
 3. **规范对齐**：写代码时必须反复查阅 `spec_delta.md`，确保代码行为与规范一致。
-4. **Git 建议**：每完成一个大任务节点，输出：bash
-git add. && git commit -m "feat: <task description>"
 
 ### 阶段三：验证 (VERIFY)
 
@@ -87,12 +84,6 @@ git add. && git commit -m "feat: <task description>"
 
 2. **清理**：将 `tasks.md` 全勾选。
 3. **移动**：`mv./docs/wip/<dir>./docs/archive/<dir>`。
-4. **Git 建议**：
-```bash
-git add./docs/
-git commit -m "chore: archive <topic> and update SOT"
-
-```
 
 ## 5) 安全守则 (Safety Protocol)
 
